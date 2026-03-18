@@ -91,7 +91,7 @@ const send = async () => {
     ip.value = '';
     showT();
     try {
-        let j = await (await fetch('https://syntaroai.app.n8n.cloud/webhook/35eebe44-8cdd-43d3-b526-24b7fb7be2bd/chat', {
+        let j = await (await fetch('https://n8n-production-89f5.up.railway.app/webhook/35eebe44-8cdd-43d3-b526-24b7fb7be2bd/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ action: 'sendMessage', sessionId: sid, chatInput: t })
